@@ -1,0 +1,17 @@
+.footer {
+    background: 
+    #4B709A;
+    height: 100px;
+    position: relative;
+    color: #CADDC9;
+  }
+  
+  .footer > .bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #2D4361;
+    padding: 10px;
+  }
+  
