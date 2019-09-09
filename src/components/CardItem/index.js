@@ -9,9 +9,9 @@ function CardItem(props){
             src={props.src}
             alt={props.name}
             
-            clicked={props.clicked} />
-            {/* </div> */}
-            {/* onClick={ () => props.handleClick(props.id)} /> */}
+            clicked={props.clicked} 
+           
+            onClick={ () => props.cardClick(props.id)} />
         
         </div>
 
