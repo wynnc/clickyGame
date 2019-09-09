@@ -19,13 +19,13 @@ class Game extends Component {
     this.setState({ card: this.shuffleCard(this.state.card)})
   }
 
-  handleCorrectClick = () => {
+  handleCorrectClick = (newCards) => {
     const { topScore, score } = this.state;
     const newScore = score + 1;
     const newTopScore = Math.max(newScore, topScore);
 
     this.setState({
-      cards: this.shuffleCard(),
+      cards: this.shuffleCard(newCards),
       score: newScore,
       topScore: newTopScore
     });
@@ -46,7 +46,7 @@ class Game extends Component {
 
   handleCardClick = id => {
     let isClicked = false;
-    const newCard = this.state.cards.map(item => {
+    const newCards = this.state.cards.map(item => {
       const newAnimal = { ...item };
       if(newAnimal.id === id) {
         if (!newAnimal.clicked) {
@@ -56,7 +56,7 @@ class Game extends Component {
       }
       return newAnimal
     });
-    isClicked ? this.handleCorrectClick(newCard) : this.handleIncorrectClick(newCard);
+    isClicked ? this.handleCorrectClick(newCards) : this.handleIncorrectClick(newCards);
   };
 
 
