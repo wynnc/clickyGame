@@ -76,6 +76,17 @@
         "name": "Tiger",
         "image": "/assets/images/tiger.gif",
         "clicked": false
+    },
+    {
+        "id": 14,
+        "name": "Penguins",
+        "image": "/assets/images/penguins.gif",
+        "clicked": false
+    },
+    {
+        "id": 15,
+        "name": "Monkey",
+        "image": "/assets/images/monkey",
+        "clicked": false
     }
-
 ]

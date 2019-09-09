@@ -16,7 +16,7 @@ class Game extends Component {
     topScore: 0
   };
   componentDidMount(){
-    this.setState({ card: this.shuffleCard(this.state.card)})
+    this.setState({ cards: this.shuffleCard(this.state.cards)})
   }
 
   handleCorrectClick = (newCards) => {
@@ -39,7 +39,7 @@ class Game extends Component {
   };
   
   resetCard = cards => {
-    const reset = cards.map(card => ({ ...card, clicked: false }));
+    const reset = cards.map(cards => ({ ...cards, clicked: false }));
     return this.shuffleCard(reset);
   }
 
@@ -67,7 +67,7 @@ class Game extends Component {
 
 
 
-  shuffleCard = card => {
+  shuffleCard = cards => {
     let i = cards.length - 1;
     while (i > 0) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -86,12 +86,12 @@ class Game extends Component {
         <Header />
 
         <Wrapper>
-          {this.state.cards.map(card => (
+          {this.state.cards.map(cards => (
             <CardItem
-              key={card.id}
-              id={card.id}
-              src={card.image}
-              name={card.name}
+              key={cards.id}
+              id={cards.id}
+              src={cards.image}
+              name={cards.name}
               cardClick={this.handleCardClick}
             //   onClick={ () => card.handleClick(card.id)}
              
