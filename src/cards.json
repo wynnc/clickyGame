@@ -70,5 +70,12 @@
         "name": "Seal",
         "image": "/assets/images/seal.gif",
         "clicked": false
+    },
+    {
+        "id": 13,
+        "name": "Tiger",
+        "image": "/assets/images/tiger.gif",
+        "clicked": false
     }
+
 ]

@@ -48,14 +48,19 @@ class Game extends Component {
     let isClicked = false;
     const newCards = this.state.cards.map(item => {
       const newAnimal = { ...item };
+      // console.log(newAnimal);
       if(newAnimal.id === id) {
-        if (!newAnimal.clicked) {
+        console.log(newAnimal.clicked)
+        // console.log(typeof newAnimal.clicked)
+        if (newAnimal.clicked === false) {
+          console.log(newAnimal);
           newAnimal.clicked = true;
           isClicked = true;
         }
       }
       return newAnimal
     });
+    // console.log(isClicked);
     isClicked ? this.handleCorrectClick(newCards) : this.handleIncorrectClick(newCards);
   };
 
