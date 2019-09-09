@@ -2,91 +2,97 @@
     {
         "id": 1,
         "name": "Panda",
-        "image": "/assets/images/Panda.gif",
+        "image": "/images/Panda.gif",
         "clicked": false
     },
     {
         "id": 2,
         "name": "Baby Cheetah",
-        "image": "/assets/images/baby-cheetah.gif",
+        "image": "/images/baby-cheetah.gif",
         "clicked": false
     },
     {
         "id": 3,
         "name": "Bear",
-        "image": "/assets/images/bear.gif",
+        "image": "/images/bear.gif",
         "clicked": false
     },
     {
         "id": 4,
         "name": "Blue Frog",
-        "image": "/assets/images/blue-frog.gif",
+        "image": "/images/blue-frog.gif",
         "clicked": false
     },
     {
         "id": 5,
         "name": "Elephant",
-        "image": "/assets/images/elephant.gif",
+        "image": "/images/elephant.gif",
         "clicked": false
     },
     {
         "id": 6,
         "name": "Fox",
-        "image": "/assets/images/fox.gif",
+        "image": "/images/fox.gif",
         "clicked": false
     },
     {
         "id": 7,
         "name": "Giraffes",
-        "image": "/assets/images/giraffes.gif",
+        "image": "/images/giraffes.gif",
         "clicked": false
     },
     {
         "id": 8,
         "name": "Hippo",
-        "image": "/assets/images/hippo.gif",
+        "image": "/images/hippo.gif",
         "clicked": false
     },
     {
         "id": 9,
         "name": "Humming Bird",
-        "image": "/assets/images/humming-bird.gif",
+        "image": "/images/humming-bird.gif",
         "clicked": false
     },
     {
         "id": 10,
         "name": "Owl",
-        "image": "/assets/images/owl.gif",
+        "image": "/images/owl.gif",
         "clicked": false
     },
     {
         "id": 11,
         "name": "Squirrel",
-        "image": "/assets/images/squirrel-hands-up.gif",
+        "image": "/images/squirrel-hands-up.gif",
         "clicked": false
     },
     {
         "id": 12,
         "name": "Seal",
-        "image": "/assets/images/seal.gif",
+        "image": "/images/seal.gif",
         "clicked": false
     },
     {
         "id": 13,
         "name": "Tiger",
-        "image": "/assets/images/tiger.gif",
+        "image": "/images/tiger.gif",
         "clicked": false
     },
     {
         "id": 14,
         "name": "Penguins",
-        "image": "/assets/images/penguins.gif",
+        "image": "/images/penguins.gif",
         "clicked": false
     },
     {
         "id": 15,
         "name": "Monkey",
-        "image": "/assets/images/monkey",
+        "image": "/images/monkey",
+        "clicked": false
+    },
+    {
+        "id": 16,
+        "name": "Pig",
+        "image":"/images/hippo.gif",
         "clicked": false
     }
 ]
