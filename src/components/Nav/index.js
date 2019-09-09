@@ -5,7 +5,7 @@ function Nav(props) {
   return (
     <nav className="navbar">
       <ul>
-        <li className="brand">
+        <li>
           <a href="/">Clicky Game</a>
         </li>
         {/* <NavMessage score={props.score} topScore={props.topScore} /> */}
