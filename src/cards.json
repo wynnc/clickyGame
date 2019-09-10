@@ -88,5 +88,11 @@
         "name": "Monkey",
         "image": "/assets/images/monkey.gif",
         "clicked": false
+    },
+    {
+        "id": 16,
+        "name": "Pig",
+        "image": "/assets/images/pig.gif",
+        "clicked": false
     }
 ]
