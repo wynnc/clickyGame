@@ -6,7 +6,7 @@ function CardItem(props){
         <div>
             {/* <div className="img-container"> */}
             <img 
-            src={props.src}
+            src={process.env.PUBLIC_URL + props.src}
             alt={props.name}
             
             clicked={props.clicked} 

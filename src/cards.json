@@ -86,7 +86,7 @@
     {
         "id": 15,
         "name": "Monkey",
-        "image": "/assets/images/monkey",
+        "image": "/assets/images/monkey.gif",
         "clicked": false
     }
 ]
