@@ -6,7 +6,7 @@ function Nav(props) {
     <nav className="navbar">
       <ul>
         <li>
-          <a href="/">Clicky Game</a>
+          <a href="public.env.PUBLIC_URL/">Clicky Game</a>
         </li>
         {/* <NavMessage score={props.score} topScore={props.topScore} /> */}
         <li>
