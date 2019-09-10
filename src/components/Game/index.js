@@ -43,7 +43,7 @@ class Game extends Component {
   };
 
   handleCardClick = id => {
-    if (this.state.score < 11) {
+    if (this.state.score < 15) {
       let isClicked = false;
       const newCards = this.state.cards.map(item => {
         const newAnimal = { ...item };
