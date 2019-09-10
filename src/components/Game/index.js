@@ -7,19 +7,18 @@ import Header from "../Header/index";
 // import Footer from "../Footer/index";
 import "./style.css";
 
-
-
 class Game extends Component {
   state = {
     cards,
     score: 0,
     topScore: 0
   };
-  componentDidMount(){
-    this.setState({ cards: this.shuffleCard(this.state.cards)})
+
+  componentDidMount() {
+    this.setState({ cards: this.shuffleCard(this.state.cards) });
   }
 
-  handleCorrectClick = (newCards) => {
+  handleCorrectClick = newCards => {
     const { topScore, score } = this.state;
     const newScore = score + 1;
     const newTopScore = Math.max(newScore, topScore);
@@ -37,33 +36,46 @@ class Game extends Component {
       score: 0
     });
   };
-  
+
   resetCard = cards => {
     const reset = cards.map(cards => ({ ...cards, clicked: false }));
     return this.shuffleCard(reset);
-  }
-
-
-  handleCardClick = id => {
-    let isClicked = false;
-    const newCards = this.state.cards.map(item => {
-      const newAnimal = { ...item };
-     
-      if(newAnimal.id === id) {
-        if (!newAnimal.clicked) {
-          
-          newAnimal.clicked = true;
-          isClicked = true;
-        }
-      }
-      return newAnimal
-    });
-    
-    isClicked ? this.handleCorrectClick(newCards) : this.handleIncorrectClick(newCards);
   };
 
+  handleCardClick = id => {
+    if (this.state.score < 11) {
+      let isClicked = false;
+      const newCards = this.state.cards.map(item => {
+        const newAnimal = { ...item };
 
+        if (newAnimal.id === id) {
+          if (!newAnimal.clicked) {
+            newAnimal.clicked = true;
+            isClicked = true;
+          }
+        }
+        return newAnimal;
+      });
 
+      isClicked
+        ? this.handleCorrectClick(newCards)
+        : this.handleIncorrectClick(newCards);
+    } else {
+      this.wonGame(cards);
+    }
+  };
+
+  wonGame = cards => {
+    const { topScore, score } = this.state;
+    const newScore = score + 1;
+    const newTopScore = Math.max(newScore, topScore);
+
+    this.setState({
+      cards: this.shuffleCard(cards),
+      score: 0,
+      topScore: newTopScore
+    });
+  };
 
   shuffleCard = cards => {
     let i = cards.length - 1;
@@ -91,7 +103,6 @@ class Game extends Component {
               src={cards.image}
               name={cards.name}
               cardClick={this.handleCardClick}
-
             />
           ))}
         </Wrapper>
