@@ -4,7 +4,7 @@ import CardItem from "../CardItem/index";
 import Nav from "../Nav/index";
 import Wrapper from "../Wrapper/index";
 import Header from "../Header/index";
-// import Footer from "../Footer/index";
+import Footer from "../Footer/index";
 import "./style.css";
 
 class Game extends Component {
@@ -106,7 +106,7 @@ class Game extends Component {
             />
           ))}
         </Wrapper>
-        {/* <Footer /> */}
+        <Footer />
       </>
     );
   }
